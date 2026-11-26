@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About Orange Owl Data",
+      "description": "Learn more about our data analysis and AI insights\n",
+      "author": [],
+      "contents": "\n🦉 About Orange Owl Data\nData-Driven Insights and AI Perspectives\nDedicated to exploring the intersection of data science, artificial intelligence, and business intelligence.\nOrange Owl Data is a blog dedicated to exploring the fascinating intersection of data science, artificial intelligence, and business intelligence. We believe that data-driven insights can transform how organizations understand and operate in an increasingly complex world.\nOur Mission\nWe’re committed to:\nEducating through clear, practical examples of data analysis and machine learning\nInnovating by exploring cutting-edge techniques in AI and data science\nSharing insights that bridge theory and real-world application\nGrowing a community of data enthusiasts and professionals\nWhat We Cover\n🔍 Data Analysis – From exploratory data analysis to advanced statistical modeling\n📊 Visualizations – Creating compelling visual stories from raw data\n🤖 AI & Machine Learning – Practical applications and theoretical foundations\n💡 Best Practices – Tools, techniques, and workflows that work\n🚀 Case Studies – Real-world applications and lessons learned\nOur Tools\nWe primarily use:\nR & R Markdown – For reproducible data analysis and reporting\nPython – For machine learning and advanced analytics\nDistill – For beautiful, responsive blog publishing\nData Visualization – ggplot2, Plotly, and other visualization libraries\nConnect With Us\nThis blog represents our passion for data science and our commitment to sharing knowledge with the community. Each post is carefully crafted to provide both educational value and practical utility.\n\n📧 Have questions or suggestions? We’d love to hear from you!\n\n\n\n\n",
+      "last_modified": "2026-11-25T20:27:29-06:00"
+    },
+    {
+      "path": "Blog.html",
+      "title": "Blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2026-11-25T16:45:50-06:00"
+    },
+    {
+      "path": "index.html",
+      "title": "🦉 Orange Owl Data Blog",
+      "author": [],
+      "contents": "\nWelcome to Orange Owl Data\nData Insights, Analysis, and AI Perspectives\nExploring the intersection of data science, artificial intelligence, and business intelligence through thoughtful analysis and practical examples.\nLatest Posts\n\n\n\n",
+      "last_modified": "2026-11-25T20:27:50-06:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

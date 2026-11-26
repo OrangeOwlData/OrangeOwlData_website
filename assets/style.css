@@ -1,0 +1,436 @@
+/* Orange Owl Data - Custom Theme */
+/* Color Palette: Orange (#FF8C00, #FFA500), Owl Brown (#8B6F47), Dark Background (#1a1a1a) */
+
+:root {
+  --orange-primary: #FF8C00;
+  --orange-light: #FFA500;
+  --orange-pale: #FFE4B5;
+  --owl-brown: #8B6F47;
+  --owl-dark: #3E3B39;
+  --text-dark: #2c3e50;
+  --text-light: #ecf0f1;
+  --bg-light: #f8f9fa;
+  --accent-color: #FF8C00;
+}
+
+/* Typography & General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: #e8e8e8;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--orange-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--owl-brown);
+  text-decoration: underline;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: #FF8C00;
+  box-shadow: 0 2px 10px rgba(255, 140, 0, 0.2);
+}
+
+.navbar-title {
+  color: white !important;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--orange-pale) !important;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--orange-pale);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Distill Article/Page Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--owl-dark);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  color: var(--orange-primary);
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 3px solid var(--orange-primary);
+  padding-bottom: 0.2em;
+}
+
+h2 {
+  color: var(--owl-brown);
+  font-size: 1.8em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  color: var(--orange-primary);
+  font-size: 1.4em;
+}
+
+/* Main Content Area */
+.distill-site-nav {
+  background: linear-gradient(to right, var(--orange-primary), var(--owl-brown));
+  padding: 20px 0;
+}
+
+/* Post Listing */
+.posts-list {
+  margin: 2em 0;
+}
+
+.post-preview {
+  border-left: 4px solid var(--orange-primary);
+  padding-left: 1.5em;
+  margin-bottom: 2em;
+  transition: all 0.3s ease;
+}
+
+.post-preview:hover {
+  border-left-color: var(--owl-brown);
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.1);
+}
+
+.post-preview h2 {
+  color: var(--owl-dark);
+  margin-top: 0;
+}
+
+.post-preview h2 a {
+  color: var(--orange-primary);
+  transition: color 0.3s ease;
+}
+
+.post-preview h2 a:hover {
+  color: var(--owl-brown);
+}
+
+.post-preview .metadata {
+  color: #7f8c8d;
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+.post-preview .metadata .date {
+  color: var(--orange-primary);
+  font-weight: 600;
+}
+
+.post-preview .description {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-top: 0.5em;
+}
+
+/* Article Byline */
+.byline {
+  background: linear-gradient(to right, rgba(255, 140, 0, 0.05), rgba(139, 111, 71, 0.05));
+  border-left: 3px solid var(--orange-primary);
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 4px;
+}
+
+.byline .author {
+  color: var(--owl-dark);
+  font-weight: 700;
+}
+
+.byline .date {
+  color: var(--orange-primary);
+  font-weight: 600;
+}
+
+/* Code Blocks */
+code {
+  background-color: var(--bg-light);
+  color: var(--owl-dark);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+}
+
+pre {
+  background-color: #f5f5f5;
+  border-left: 4px solid var(--orange-primary);
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/* Buttons & Interactive Elements */
+button, .btn {
+  background-color: var(--orange-primary);
+  color: white;
+  border: none;
+  padding: 0.7em 1.5em;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--owl-brown);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 140, 0, 0.3);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--orange-primary);
+  color: #555;
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 1.5em;
+  background-color: rgba(255, 140, 0, 0.03);
+  padding: 0.5em 1.5em;
+  border-radius: 4px;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+}
+
+thead {
+  background-color: var(--orange-primary);
+  color: white;
+}
+
+th, td {
+  padding: 0.75em 1em;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 140, 0, 0.05);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Figures & Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 1em 0;
+}
+
+figure {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 0.95em;
+  margin-top: 0.5em;
+}
+
+/* Distill Article Meta */
+.distill-article .article-metadata {
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(139, 111, 71, 0.1));
+  border-radius: 8px;
+  padding: 1.5em;
+  margin: 2em 0;
+}
+
+.article-title {
+  color: var(--orange-primary);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, var(--owl-dark) 0%, #2a2825 100%);
+  color: white;
+  padding: 2em;
+  margin-top: 3em;
+  border-top: 3px solid var(--orange-primary);
+}
+
+footer a {
+  color: var(--orange-light);
+}
+
+footer a:hover {
+  color: var(--orange-pale);
+}
+
+/* Accent Callouts */
+.note, .tip, .warning {
+  border-left: 4px solid var(--orange-primary);
+  background-color: rgba(255, 140, 0, 0.05);
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 4px;
+}
+
+.note::before {
+  content: '📝 ';
+  font-weight: bold;
+  color: var(--orange-primary);
+}
+
+.tip::before {
+  content: '💡 ';
+  font-weight: bold;
+  color: var(--orange-primary);
+}
+
+.warning::before {
+  content: '⚠️ ';
+  font-weight: bold;
+  color: var(--orange-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .post-preview {
+    padding-left: 1em;
+  }
+}
+
+/* Loading animation with orange theme */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.distill-site-nav + main {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Owl-inspired icon styling */
+.owl-icon::before {
+  content: '🦉';
+  margin-right: 0.5em;
+  font-size: 1.1em;
+}
+
+/* Orange accent bar under main headings */
+.d-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--orange-primary);
+  margin: 0.5em 0 0 0;
+}
+
+/* Hover effect for links in navigation */
+.d-title a {
+  color: var(--orange-primary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.d-title a:hover {
+  border-bottom-color: var(--orange-primary);
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--owl-dark);
+    color: var(--text-light);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--orange-light);
+  }
+
+  code {
+    background-color: #2a2825;
+    color: var(--orange-pale);
+  }
+
+  pre {
+    background-color: #1a1a1a;
+    border-left-color: var(--orange-primary);
+  }
+
+  table thead {
+    background-color: var(--owl-brown);
+  }
+
+  tbody tr:hover {
+    background-color: rgba(255, 140, 0, 0.1);
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #2a2825;
+  }
+
+  .post-preview {
+    border-left-color: var(--orange-light);
+  }
+}
